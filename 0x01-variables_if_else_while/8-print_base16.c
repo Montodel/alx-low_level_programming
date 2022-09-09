@@ -5,21 +5,20 @@
 
 /* betty style doc for function main goes there */
 /**
- *main - task 3
+ *main - task 8
  *Return: 0 on success
 */
 
 int main(void)
 {
-	char lower_case;
-	char upper_case;
-	for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
+	char base_16;
+	for (base_16 = 48; base_16 <= 57; base_16++)
 	{
-		putchar(lower_case);
+		putchar (base_16);
 	}
-	for (upper_case = 'A'; upper_case <= 'Z'; upper_case++)
+	for (base_16 = 97; base_16 <= 102; base_16++)
 	{
-		putchar (upper_case);
+		putchar (base_16);
 	}
 	putchar ('\n');
 	return (0);
