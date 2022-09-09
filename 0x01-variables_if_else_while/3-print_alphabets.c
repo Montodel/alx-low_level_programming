@@ -1,26 +1,28 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
- *main - task 3
- *Return: 0 on success
-*/
+ * main - Entry point
+ * Return: 0
+ */
 
 int main(void)
 {
-	char lower_case;
-	char upper_case;
-	for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
+	char a = 'a';
+
+	while (a <= 'z')
 	{
-		putchar(lower_case);
+		putchar(a);
+		a++;
 	}
-	for (upper_case = 'A'; upper_case <= 'Z'; upper_case++)
+
+	a = 'A';
+
+	while (a <= 'Z')
 	{
-		putchar (upper_case);
+		putchar(a);
+		a++;
 	}
-	putchar ('\n');
+
+	putchar('\n');
 	return (0);
 }
