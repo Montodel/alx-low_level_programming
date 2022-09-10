@@ -1,46 +1,32 @@
 #include <stdio.h>
-
 /**
- * main - print pairs of double digit combos
- * Description: print pairs of double digit combos
- * Return: Always 0 (Success)
- */
-
+* main - Prints all possible combinations of a pair of
+* two digit numbers, without any repetition.
+*
+* Return: 0 on success.
+*/
 int main(void)
 {
-	int i, j, k, m;
-
-	i = 48;
-	while (i < 58)
-	{
-		j = 48;
-		while (j < 58)
-		{
-			m = j + 1;
-			k = i;
-			while (k < 58)
-			{
-				while (m < 58)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(32);
-					putchar(k);
-					putchar(m);
-					if (i < 57 || j < 56 || k < 57 || m < 57)
-					{
-						putchar(44);
-						putchar(32);
-					}
-					m++;
-				}
-				m = 48;
-				k++;
-			}
-			j++;
-		}
-		i++;
-	}
-	putchar(10);
-	return (0);
-}					
+int i, j;
+for (i = 0; i <= 99; i++)
+{
+for (j = 0; j <= 99; j++)
+{
+if (i < j && i != j)
+{
+putchar((i / 10) + '0');
+putchar((i % 10) + '0');
+putchar(' ');
+putchar((j / 10) + '0');
+putchar((j % 10) + '0');
+if (i != 98 || j != 99)
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+}
+putchar('\n');
+return (0);
+}
