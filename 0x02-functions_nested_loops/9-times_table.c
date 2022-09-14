@@ -10,6 +10,7 @@ void times_table(void)
 	int a = 0; /* factor */
 	int b; /* count  */
 	int c; /* computed value */
+	
 	while (a < 10)
 	{
 		b = 0;

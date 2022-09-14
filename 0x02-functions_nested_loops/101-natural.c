@@ -9,17 +9,18 @@
 
  int main(void)
 {
-	int n = 0;
-	int i;
+	int i = 1;
+	int total = 0;
 
-	for (i=0; i < 1024; i++)
+	while (i < 1024)
 	{
 		if (i % 3 == 0)
-		n += i;
+			total += i;
 
-		if (i % 5 == 0)
-		n += i;
+		else if (i % 5 == 0)
+			total += i;
+		i++;
 	}
-	printf("%i\n", n);
-	return 0;
+	printf("%d\n", total);
+	return (0);
 }
